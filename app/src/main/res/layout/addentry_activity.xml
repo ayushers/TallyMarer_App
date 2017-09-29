@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/addentry"
+        android:id="@+id/entry_textview"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entry_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="@string/cat_entry"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:id="@+id/entry_value"
+        android:digits="0123456789-"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Starting Value"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/entry_ok"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/entry_cancel"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
