@@ -8,4 +8,8 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="del">Delete Category</string>
+    <string name="swipe_delete">DELETED</string>
+    <string name="swipe_undo">UNDO</string>
+    <string name="Add">+</string>
+    <string name="Sub">-</string>
 </resources>
