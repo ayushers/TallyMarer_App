@@ -1,40 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <!-- A CardView that contains a TextView -->
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:id="@+id/cv"
-    card_view:cardCornerRadius="5dp"
-    card_view:cardBackgroundColor="#80ffaa"
-    card_view:cardElevation="@dimen/cardview_default_elevation">
+    android:orientation="vertical">
+
+    <!-- Swipe Layout-->
+    <!--<include layout="@layout/row_swipe" />-->
 
     <RelativeLayout
+        android:id="@+id/view_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
         >
+        <!--android:background="@color/swipebg"-->
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padd_10"
+            android:src="@android:drawable/ic_menu_delete" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/category_Name"
-            android:layout_alignParentTop="true"
-            android:textSize="30sp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/category_Desc"
-            android:layout_below="@+id/category_Name"
-            android:textSize="15sp"
-            />
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padd_10"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="DELETE"
+            android:textColor="@color/swipebg"
+            android:textSize="13dp" />
 
     </RelativeLayout>
 
-</android.support.v7.widget.CardView>
-
-
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardBackgroundColor="@color/entryColor"
+        card_view:cardElevation="@dimen/cardview_default_elevation">
+        <!--card_view:cardCornerRadius="5dp"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/category_Name"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/category_Desc"
+                android:layout_below="@+id/category_Name"
+                android:textSize="15sp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

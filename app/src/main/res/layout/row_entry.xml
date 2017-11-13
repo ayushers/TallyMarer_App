@@ -5,7 +5,7 @@
     android:clickable="true"
     android:focusable="true"
     android:orientation="horizontal"
-    android:background="#80ffaa"
+    android:background="@color/entryColor"
     android:layout_margin="5dp"
     android:padding="5dp">
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_weight=".01"
         android:gravity="center"
-        android:text="-" />
+        android:text="@string/Sub" />
 
     <Button
         android:id="@+id/but_plus"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_weight=".01"
         android:gravity="center"
-        android:text="+" />
+        android:text="@string/Add" />
 
 
 </LinearLayout>
