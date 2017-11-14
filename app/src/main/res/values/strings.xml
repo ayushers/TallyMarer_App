@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Tally Marker </string>
-    <string name="add">Add New Category</string>
+    <string name="addCat">Add New Category</string>
     <string name="addentry">Add New Entry</string>
-    <string name="cat_name">Category Name</string>
-    <string name="cat_desc">Category Description</string>
-    <string name="cat_entry">Entry Name</string>
+    <string name="cat_name">Name</string>
+    <string name="cat_desc">Description</string>
+    <string name="cat_entry">Name</string>
+    <string name="starting_value">Starting Value</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="del">Delete Category</string>

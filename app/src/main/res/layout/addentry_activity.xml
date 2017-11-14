@@ -4,14 +4,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/addentry"
-        android:id="@+id/entry_textview"
-        android:layout_gravity="center_horizontal"/>
-
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -32,7 +24,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/entry_value"
             android:digits="0123456789-"
-            android:hint="Starting Value"
+            android:hint="@string/starting_value"
             android:inputType="number"  />
     </android.support.design.widget.TextInputLayout>
 

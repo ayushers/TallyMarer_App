@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/view_background_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp"
+    >
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="@dimen/ic_delete"
+        android:layout_height="@dimen/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padd_10"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padd_10"
+        android:layout_toLeftOf="@id/delete_icon"
+        android:text="DELETE"
+        android:textColor="@color/swipebg"
+        android:textSize="13dp" />
+
+</RelativeLayout>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/row_entry"
     android:clickable="true"
     android:focusable="true"
     android:orientation="horizontal"
@@ -41,5 +75,5 @@
         android:gravity="center"
         android:text="@string/Add" />
 
-
-</LinearLayout>
+    </LinearLayout>
+</FrameLayout>

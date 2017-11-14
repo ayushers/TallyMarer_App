@@ -4,6 +4,6 @@
 
     <item
         android:id="@+id/home_Menu_add"
-        android:title="@string/add"
+        android:title="@string/addCat"
         android:orderInCategory="100"  />
 </menu>
