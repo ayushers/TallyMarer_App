@@ -5,8 +5,11 @@
     <color name="colorAccent">#e6af4b</color>
 
     <color name="entryColor">#dddfd4</color>
-    <color name="swipebg">#cc3333</color>
+    <color name="swipebg">#fafafa</color>
     <color name="test">#6ed3cf</color>
 
+    <color name="white">#ffffff</color>
+    <color name="swipered">#ff0000</color>
+    <color name="black">#000000</color>
 
 </resources>

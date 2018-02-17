@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="6dp"
+        android:background="@color/swipebg"
         >
-        <!--android:background="@color/swipebg"-->
+
         <ImageView
             android:id="@+id/delete_icon"
             android:layout_width="@dimen/ic_delete"
@@ -21,7 +22,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/padd_10"
-            android:src="@android:drawable/ic_menu_delete" />
+            android:src="@mipmap/trash_can"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
             android:layout_marginRight="@dimen/padd_10"
             android:layout_toLeftOf="@id/delete_icon"
             android:text="DELETE"
-            android:textColor="@color/swipebg"
+            android:textColor="@color/swipered"
             android:textSize="13dp" />
 
     </RelativeLayout>
